@@ -85,9 +85,19 @@ print(m)
     
     # 6,7,8 will goes in one row and 9,10,11 will goes
     # to another row
+ # -----------------------------------
     
     
     
+    # List 
+    
+    l = list('a', 1, 2, T, F)
+    print(l)
+    class(l)
+    
+    # extracting values form lists :
+    
+    print(l[[1]])
     
     
 
