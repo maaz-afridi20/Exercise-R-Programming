@@ -63,6 +63,36 @@ dim(m) = c(2,5) # now this will create 2 rows and 5 columns
 # dim function for giving rows and columnd like given above
 print(m)
 
+# _______________________________________________________
+
+# some time we want to add some values to the row 
+# or may be the column so we can do that with 
+# rbind and cbind so if we want to add value in to row
+# then we can add through rbind
+# and for column we can use cbind just like 
+
+
+    x = 1:3
+    y =4:6
+    
+    cbind(x,y)
+    # this will bind both of them on columns
+    # next to each other 
+    
+    a = 6:8
+    b = 9:11
+    rbind(a,b)
+    
+    # 6,7,8 will goes in one row and 9,10,11 will goes
+    # to another row
+    
+    
+    
+    
+    
+
+
+
 
 
 
