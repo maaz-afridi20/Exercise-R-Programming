@@ -159,6 +159,33 @@ print(m)
     table(days)
     unclass(days)
     
+# --------------------------------------------------
+    
+    # Missing Values :
+    
+    # some times there is no value in something given or
+    # the user did not put some data so in R that is read as NA
+    # and NaN 
+    # so if we want to check the variable or any other data 
+    # that weather it is empy or have data then we can use 
+    # is.na 
+    # is.nan is use for when we give some value and it can give some
+    # errors like something divide by 0 then we canuse this is.nan
+    # NA mean not applicable
+    # NaN not a number
+    
+    a = c(1,2,NA,3,4)
+    is.na(a)
+    is.nan(a) 
+    # so now this will check weather the NA value is presend or not if
+    # it is present it will say TRUE if not then will give FALSE
+    
+    b = c(1,2,NA, NaN, 3, 4)
+    is.na(b)
+    is.nan(b)
+    
+    
+    
     
     
     
