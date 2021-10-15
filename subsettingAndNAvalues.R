@@ -16,8 +16,24 @@
     x[x>"a"] # will show all the values above then "a"
     
     
+    # Matrices : 
     
-     
+    
+    b = matrix(1:6, 2, 3)
+    b
+    b[2,2] # will show element of
+    
+    b[2,] # will show the whole element of 2nd row
+    
+    b[,1] # will show the whole element of column 1
+    
+    b[1, , drop=FALSE]
+    # now the drop wil do that when we print the whole row 
+    # it does not specify that from which column that elemets are
+    # so when we write drop=False then it will show the columns name
+    b[,2, drop=FALSE]
+    
+    
     
     
     
