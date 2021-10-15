@@ -183,11 +183,35 @@ print(m)
     b = c(1,2,NA, NaN, 3, 4)
     is.na(b)
     is.nan(b)
+
+# --------------------------------------------
+    
+    # Data Frames :
+    
+    # In R if we want to save data in table form like rows and columns 
+    # then we can use data frames
+    # the length of the column must be same 
+    # if we want to convert dataframe to matrix then we can use data.matrix
+    # function 
     
     
+    x = data.frame(day = 1:4, rain = c(T,F,T,F))
+    print(x)
+    # this will show on which day the rain has rained and vice versa
+    nrow(x)
+    ncol(x) # will show numbe of columns in x data frame 
+    dim(x) # showing the dimension of x 
+    
+    row.names(x) = c("A","B","C","D") # this will change the (number shumar)
+    # to A,B,C,D (like indexes in pyth)
+    print(x)
     
     
-    
+    fruits = data.frame(fruit_name = c("banana","mango","ananas","orange"),
+                        fruit_price = c(80, 150, 1000, 90))
+    print(fruits)
+    print(fruits$fruit_name)
+    print(fruits$fruit_price)
     
 
 
