@@ -214,9 +214,44 @@ print(m)
     print(fruits$fruit_price)
     
 
+# -----------------------------------------------------
+    
+    # Objects Names :
+    
+    # we can aslo give names to the object like 
+    # x=1:5 so we can give name to the object which is in the 
+    # x like give name to 1 and give name to 2,  and so on 
 
-
-
+    
+    b = 1:4
+    names(b) # here it will show null 
+    # so we can give names to them like 
+    
+    names(b) = c("val1","val2","val3","val4")
+    print(b)
+    # so now the indexes should have been change and will be 
+    # val1, .... and so on 
+    # and we can print that as well like 
+    
+    # we can also have lists of list inside list like 
+    
+    c = list(a=1:5, b="ID",d=c("first name", "Last name"))
+    print(c)
+    print(c$d) # will print first name and last name
+    print(c$d[1]) # will only print first name 
+    
+    # just like that we can cange the name of the columna nd
+    # the rows of the matrix
+    # like 
+    
+    m = matrix(1:4, ncol = 2, nrow = 2)
+    dimnames(m) = list(c("A","B"), c("C","D"))
+    print(m)
+    
+    # so the names of the rows will be A,B and the columns name 
+    # will be C,D
+    # it may b any thing it may b r1,r2 c1,c2 or anything like that
+    
 
 
 
