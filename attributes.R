@@ -100,16 +100,68 @@ print(m)
     print(l[[1]])
     
     
+# -----------------------------
+    
+    # Factor :
+    
+    # we will use the factor in that situation when the data is
+    # on levels (jiss ki darja bandi hue ho) like for any school class
+    # class nursery may have sctions like a, b, c
+    
+    
+    
+    a = factor(c("yes","yes","yes","yes","no","no"))
+    print(a)
+    table(a) # this will show that how many of them are yes and 
+    # how may of them are no
+    unclass(a) # this will just do that like this will open the a variable
+    # like what is in the a variale like it will show that 
+    # 2 for yes and 1 for no and it will show that the name of the attribute
+    # is level and will show which is in that level i-e no and yes
 
+    
+    province = factor(c("punjab","kpk","sindh","kpk","sindh","punjab",
+                        "kpk"))
+    print(province)
+    table(province) # this will show how many values are of eact other
+    unclass(province)
+    
+    # so mainly we can say that in the factor it show the values to us
+    # but behind it save the data in numeric form like here above it save The
+    # data sinddh , punjab , kpk according to 1,2, and 3 and it gives the 
+    # levels it self. 
+    
+    # some time we need to give them levels it self so we can do it also 
+    # by adding level() attribute
+    
+    gender = factor(c("male","female","male","male",
+                      "female","female","male"), levels = c("male","female"))
+    print(gender)
+    unclass(gender)
+    table(gender)
+    
+    # so now it will level it according to male 
+    
+    
+    days = factor(c('monday','tuesday','wednesday','thursday',
+                    'friday','saturday','sunday'))
+    print(days)
+    table(days)
 
-
-
-
-
-
-
-
-
+    # now giving it levels : 
+    
+    days = factor(c('monday','tuesday','wednesday','thirsday',
+                    'friday','saturday','sunday'), levels = c(
+                'monday', 'tuesday','wednesday','thirsday',
+                'friday','saturday','sunday'
+                    ))
+    print(days)
+    table(days)
+    unclass(days)
+    
+    
+    
+    
 
 
 
