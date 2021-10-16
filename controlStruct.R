@@ -117,14 +117,45 @@ for (i in
         print(z)
     }
 
-    m(,20,100)
+    #m(,20,100)
 
-    m(1000, 21)
+    #m(1000, 21)
 
+   # ------------------------------ 
+    
+    # Vectorized Operation : 
+    
+    # inorder to give 2 statement in one line we will use;
+    # in the end of first line
 
+    x = 1:5; y= 6:10
+    x+y
+    x>2
+    x<2
+    y==8
+    x/y
 
-
-
+    # rep function is use to repeat any val
+    m = matrix(1:4, 2,2)
+    n = matrix(rep(10,4),2,2) # so this will put 4 times 10 in n matrix
+    m*n 
+    dim(m)
+    dim(n)
+    attributes(m)
+    m
+    n
+    
+    m/n
+    
+    # so if we want to multiply a matric according to 
+    # maths funtion (like multiplicatino in maths of matrices)
+    # then we can use following method
+    
+    m%*%n
+    # this will multiply 1 row of 1 matric to the 1 column of 
+    # 2nd matric and then + it as accuring in matrices multiplication
+    
+    
 
 
 
