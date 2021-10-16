@@ -70,8 +70,70 @@
     
     d[[2]][4] # this work same like d[[c(2,4)]]
     
+# --------------------------------------------------
+    
+    # Removing Na values : 
+    
+    # if in some data some of the value are not give which is written as
+    # na so if we want to remove that value then we can remove that 
+    # from that data 
+    
+    x = c(1, 2, NA, 3, NA, 4)
+    yes = is.na(x)
+    !yes
+    x[!yes] # so this will print that values that are not in yes
+    # wo as above we give condition to yes which will save that 
+    # values in which ther is not na in x
+    
+    # there is another funtion that do the same 
+    # function which is complete.cases() so we have to 
+    # put x or y in the bracket of the complete cases and it 
+    # will check the condition weather the na is present or not
     
     
+    x = c("a", "b", "c", NA, NA, "d", "e")
+    complete.cases(x) # it will only through true and false
+    # on that position at which the NA is present or not
+    # so if we want it go return the values in the variable
+    # then we should save it in another variable 
+    
+    present = complete.cases(x)
+    x[present]
+    
+    # we can have another vaeriable like 
+    
+    y = c(1, 2, NA, 3, NA, 4, 5)
+    present2 = complete.cases(y)
+    y[present2]
+    
+    
+    # or we can use it in one line like 
+    
+    
+    
+    x = c("a", "b", "c", NA, NA, "d", "e")
+    y = c(1, 2, NA, 3, NA, 4, 5)
+    good = complete.cases(x,y)
+    x[good]
+    y[good]
+    
+    
+    a = airquality
+    View(a)
+    View(a[1:10,1:3]) # will show 10 rows and 3 columns
+    # air quality is built in data set in R
+    View(a[1:5,]) # will only 5 rows and all columns
+    
+    airquality = a
+    goody = complete.cases(airquality)
+    a[goody,][1:6]
+    # now this will not show NA value in data set of airquality
+
+    
+    
+    
+    
+        
     
     
     
