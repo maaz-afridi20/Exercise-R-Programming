@@ -65,15 +65,61 @@ for (i in
 }
 
 
+ # While Loop : 
+    count = 0
+    while (count < 10) {
+        print(count)
+        count = count + 1
+    }
+    
+    # in while loop first we have to give conditions
+    
+    
+# ------------------------------------
+    
+    # FUNCTIONS : 
+    
+    # if we want to make function then we have to use 
+    # function() keyword and then save it into another 
+    # variable
+    # functions may also be nested 
+    
+    
+    
+    random = rnorm(100) # will store any 100 random values
+    random
+    
+    
+    f = function(a,b=10){
+        print(a^2)
+        print(b)
+    }
+    
+    f(2)
+    
+    d = function(c, d){
+        print(c)
+        print(d)
+    }
+    
+    d(10)
+    
+    e = function(f,e){
+        print(f)
+        print(e)
+    }
+    e(10,20)
+        
+    
+    m = function(x=10, y=12, z=NULL){
+        print(x)
+        print(y)
+        print(z)
+    }
 
+    m(,20,100)
 
-
-
-
-
-
-
-
+    m(1000, 21)
 
 
 
