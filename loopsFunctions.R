@@ -69,8 +69,16 @@
     # write function and then put it 
     
     
+    # Sapply : 
+    
+    # it works same as the l apply but in the main difference is that
+    # when we use lapply it gives us result in list form while the sapply 
+    # gives us the result in vector form as a default
     
     
+    sapply(mylist, sum)
+    # so we donot need to use unlist function which we use in 
+    # lapply funtion 
     
     
     
