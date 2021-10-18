@@ -34,36 +34,46 @@
     apply(mymat, 1, sum, na.rm = TRUE)
     # so now if we conduct it it will print the sum and will escape the NA
     # value 
+    # the apply function applies on whole array or matrix or whole data set etc
+    
+    
+    # --------------------------------------------
     
     
     
-
+    #LApply:
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        # here the l stands for list
+        # so the lapply will looops over the list and will evaluate
+        # each of the element of the list 
+        # the function that are given to them 
+        # 
+        #
+        #
+        #
         
-        
-        
-        
-        
-        
-        
-        
-        
+    mylist = list(a=matrix(1:9,ncol = 3),b=1:5,c=8)
+    # so if we want to calculate sum we can do that by lapply
+    lapply(mylist, sum)
+    
+    # it does not matter rows and columns 
+    # so when we apply this function this will print the result
+    # in another list so if we donot want to do that like if we
+    # donot want to it to be store in another list then we can use 
+    # unlist option 
+    
+    unlist(lapply(mylist,sum))
+    # so now in this case a vector will be return 
+    # in the function we can give our own function like 
+    # if we want to multiply the values with 10 so we have to 
+    # write function and then put it 
+    
+    
+    
+    
+    
+    
+    
+    
     
     
